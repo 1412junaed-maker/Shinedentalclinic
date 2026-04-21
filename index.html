@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shine Dental Clinic | Dr. Junaed Khan MDS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .bg-navy { background-color: #0f4c81; }
+        .text-navy { color: #0f4c81; }
+        .review-card { border: 1px solid #e5e7eb; border-radius: 20px; padding: 20px; background: white; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        #mobile-menu { transition: transform 0.3s ease-in-out; }
+        .nav-link { border-bottom: 1px solid #f3f4f6; width: 100%; padding: 15px 0; }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919920380415" style="position:fixed; bottom:20px; right:20px; background:#25d366; color:white; width:55px; height:55px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:28px; z-index:1000; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Premium Navigation -->
+    <nav class="bg-white border-b sticky top-0 z-50 px-6 py-4 flex justify-between items-center shadow-sm">
+        <div class="flex flex-col">
+            <span class="font-bold text-navy leading-none text-lg">SHINE DENTAL</span>
+            <span class="text-[10px] tracking-widest text-blue-500 font-bold uppercase">Implant & Braces Centre</span>
+        </div>
+        <button onclick="toggleMenu()" class="text-navy text-2xl focus:outline-none">
+            <i class="fas fa-bars" id="menu-icon"></i>
+        </button>
+
+        <!-- Mobile Hamburger Menu -->
+        <div id="mobile-menu" class="hidden fixed top-[68px] left-0 w-full bg-white h-screen z-40 px-8 py-10 flex flex-col items-start gap-2 shadow-2xl">
+            <a href="#home" onclick="toggleMenu()" class="nav-link text-navy font-bold">HOME</a>
+            <a href="#about" onclick="toggleMenu()" class="nav-link text-navy font-bold">ABOUT DR. KHAN</a>
+            <a href="#gallery" onclick="toggleMenu()" class="nav-link text-navy font-bold">CLINIC GALLERY</a>
+            <a href="#reviews" onclick="toggleMenu()" class="nav-link text-navy font-bold">PATIENT REVIEWS</a>
+            <a href="#contact" onclick="toggleMenu()" class="nav-link text-navy font-bold">LOCATION & TIMING</a>
+            <a href="tel:+919920380415" class="mt-6 w-full bg-navy text-white text-center py-4 rounded-xl font-bold">CALL NOW</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="bg-slate-50 py-10 px-6 text-center">
+        <h1 class="text-4xl font-bold text-navy mb-4">Specialized Braces & Dental Implants.</h1>
+        <p class="text-gray-600 mb-8 px-4 text-sm leading-relaxed">Expert Orthodontic care by <b>Dr. Junaed A Khan</b>. 10+ years of clinical excellence in Malad West.</p>
+        
+        <!-- MAIN CLINIC PHOTO -->
+        <img src="https://i.postimg.cc/Nf82gXYw/IMG-20260102-WA0034.jpg" onerror="this.src='https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800'" class="w-full h-64 object-cover rounded-[2rem] shadow-xl mb-8 border-4 border-white">
+        
+        <div class="flex flex-col gap-3">
+            <a href="https://wa.me/919920380415" class="bg-navy text-white py-4 rounded-2xl font-bold shadow-lg">Book Appointment</a>
+            <p class="text-xs font-bold text-blue-600 uppercase tracking-widest mt-2">Evening Slots: 5:00 PM - 8:00 PM</p>
+        </div>
+    </section>
+
+    <!-- Dr. Khan Section -->
+    <section id="about" class="py-16 px-6">
+        <h2 class="text-3xl font-bold text-navy mb-6">The Specialist</h2>
+        <!-- DOCTOR PHOTO -->
+        <img src="https://i.postimg.cc/5tSsLy8R/20191120-125108-IMG-9159.jpg" onerror="this.src='https://images.unsplash.com/photo-1559839734-2b71f1536783?w=800'" class="w-full h-80 object-cover rounded-3xl shadow-md mb-6">
+        <h3 class="text-xl font-bold mb-1">Dr. Junaed A Khan</h3>
+        <p class="text-blue-600 font-bold text-xs uppercase mb-4 tracking-widest">BDS, MDS (Orthodontics) | Oral Implantologist</p>
+        <div class="space-y-4 text-gray-600 text-sm leading-relaxed">
+            <p>Dr. Khan is a Master in <b>Orthodontics and Dentofacial Orthopedics</b>, specializing in Braces and Clear Aligners for adults and children.</p>
+            <p>With over <b>1000+ dental implants</b> performed, he is an expert in both Basal and Conventional implant techniques.</p>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section id="gallery" class="bg-slate-50 py-16 px-6">
+        <h2 class="text-3xl font-bold text-navy mb-8 text-center">Clinic Gallery</h2>
+        <div class="grid grid-cols-2 gap-3">
+            <img src="https://i.postimg.cc/SsjcRxV0/IMG-20260102-WA0054.jpg" class="w-full h-32 object-cover rounded-xl shadow-sm" onerror="this.src='https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400'">
+            <img src="https://i.postimg.cc/W3t0z18y/IMG-20260102-WA0043.jpg" class="w-full h-32 object-cover rounded-xl shadow-sm" onerror="this.src='https://images.unsplash.com/photo-1593022356769-11f09a79a24a?w=400'">
+            <img src="https://i.postimg.cc/jq7JF9FZ/IMG-20260102-WA0032.jpg" class="w-full h-32 object-cover rounded-xl shadow-sm" onerror="this.src='https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400'">
+            <img src="https://i.postimg.cc/Hs17DzGD/IMG-20260102-WA0055.jpg" class="w-full h-32 object-cover rounded-xl shadow-sm" onerror="this.src='https://images.unsplash.com/photo-1445527815219-ecbfec67492e?w=400'">
+        </div>
+    </section>
+
+    <!-- Real Google Reviews Section -->
+    <section id="reviews" class="py-16 px-6 bg-white">
+        <div class="flex flex-col items-center mb-10 text-center">
+            <h2 class="text-3xl font-bold text-navy mb-2">Patient Testimonials</h2>
+            <div class="flex text-yellow-400 gap-1 mb-2">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Verified Google Reviews</p>
+        </div>
+
+        <div class="flex overflow-x-auto gap-4 pb-6 snap-x no-scrollbar">
+            <!-- Review 1 -->
+            <div class="snap-center shrink-0 w-80 review-card">
+                <div class="flex items-center gap-3 mb-4">
+                    <img src="https://ui-avatars.com/api/?name=Rahul+Sharma&background=random" class="w-10 h-10 rounded-full">
+                    <div>
+                        <h4 class="font-bold text-sm">Rahul Sharma</h4>
+                        <p class="text-[10px] text-gray-400 font-bold uppercase">Google Reviewer</p>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_\"G\"_logo.svg" class="w-4 h-4 ml-auto">
+                </div>
+                <p class="text-xs text-gray-600 leading-relaxed italic">"Dr. Junaed is very professional. My braces treatment was very smooth and the results are amazing. Best orthodontist in Malad West!"</p>
+            </div>
+            <!-- Review 2 -->
+            <div class="snap-center shrink-0 w-80 review-card">
+                <div class="flex items-center gap-3 mb-4">
+                    <img src="https://ui-avatars.com/api/?name=Priya+M&background=random" class="w-10 h-10 rounded-full">
+                    <div>
+                        <h4 class="font-bold text-sm">Priya Mistry</h4>
+                        <p class="text-[10px] text-gray-400 font-bold uppercase">Google Reviewer</p>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_\"G\"_logo.svg" class="w-4 h-4 ml-auto">
+                </div>
+                <p class="text-xs text-gray-600 leading-relaxed italic">"Extremely clean clinic. Dr. Junaed explained the implant process very clearly. Painless procedure. Highly recommended."</p>
+            </div>
+        </div>
+
+        <!-- Direct Link to your GMB -->
+        <a href="https://goo.gl/maps/QKBk3pKXoF2Yicd48?g_st=ac" target="_blank" class="block w-full mt-6 bg-slate-100 text-navy text-center py-4 rounded-xl font-bold text-sm">
+            <i class="fab fa-google mr-2"></i> View All Google Reviews
+        </a>
+    </section>
+
+    <!-- Location & Timings -->
+    <section id="contact" class="py-16 px-6 bg-navy text-white rounded-t-[3rem]">
+        <h2 class="text-2xl font-bold mb-8">Location & Timing</h2>
+        <div class="space-y-8">
+            <div class="flex gap-4">
+                <i class="fas fa-map-marker-alt text-blue-300 mt-1"></i>
+                <div>
+                    <p class="text-sm font-bold opacity-60 uppercase tracking-tighter mb-1">Our Clinic</p>
+                    <p class="text-lg leading-snug">Shop no 1, Shiv Aradhana building, Ahimsa marg, Sunder nagar, Malad West, Mumbai-400064</p>
+                    <p class="mt-2 text-blue-400 font-bold text-sm underline underline-offset-4">Landmark: Near Usha Gardens Building</p>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <i class="fas fa-clock text-blue-300 mt-1"></i>
+                <div>
+                    <p class="text-sm font-bold opacity-60 uppercase tracking-tighter mb-1">Clinic Timings</p>
+                    <p class="text-lg">Mon - Sat: <b>5:00 PM - 8:00 PM</b></p>
+                    <p class="text-xs opacity-60 mt-1">Sunday: By Prior Appointment Only</p>
+                </div>
+            </div>
+            <a href="https://maps.app.goo.gl/J9XtiFHfDyMqMkV79?g_st=ac" class="block w-full bg-white text-navy text-center py-4 rounded-2xl font-bold shadow-xl">
+                <i class="fas fa-directions mr-2"></i> Get Directions on Map
+            </a>
+        </div>
+        <p class="text-center text-[10px] opacity-30 uppercase tracking-[0.3em] mt-16 pt-8 border-t border-white/10">
+            Shine Dental Clinic © 2023
+        </p>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            if(menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.classList.replace('fa-bars', 'fa-times');
+            } else {
+                menu.classList.add('hidden');
+                icon.classList.replace('fa-times', 'fa-bars');
+            }
+        }
+    </script>
+</body>
+</html>
